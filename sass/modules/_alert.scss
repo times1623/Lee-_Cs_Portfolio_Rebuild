@@ -1,0 +1,74 @@
+$window: #333;
+$button: #333;
+$inactive: #aaa;
+
+#alertSec {
+  width:80%!important;
+  max-width:440px;
+  padding:30px;
+  border:2px solid $window;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  margin: 0 auto;
+  position:relative;
+
+  a {
+    padding:5px 10px;
+    border:2px solid $button;
+    border-radius:5px;
+    box-shadow:2px 2px $button;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:700;
+    color:$button;
+    display:inline-block;
+    margin:20px 20px 0 0;
+  }
+  
+  a:hover {
+    box-shadow:0 0 0;
+    transform:translate(2px,2px);
+    background:rgba(0,0,0,0.08);
+  }
+  
+  a.inactive {
+    border:2px solid $inactive;
+    color:$inactive;
+    box-shadow:2px 2px $inactive;
+    cursor:default;
+    float:right;
+    margin-right:0;
+  }
+  
+  a.inactive:hover {
+    transform:none;
+    background:none;
+  }
+}
+
+#alertSec :before {
+  border:2px solid $window;
+  height:20px;
+  width:100%;
+  position:absolute;
+  margin-left:-32px;
+  margin-top:-54px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  font-size:12px;
+  text-align:center;
+  line-height:22px;
+  background:$window;
+  color:#eee;
+  font-weight:300;
+  cursor:move;
+}
+
+.alertSec {
+    display: none;
+}
+
+.showAlert {
+    display: block;
+}
+

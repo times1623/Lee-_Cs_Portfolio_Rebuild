@@ -1,0 +1,86 @@
+
+.form {
+      
+  h3 {
+    font-size: 1.98em;
+    margin-bottom: .8em;
+    margin-top: .4em;
+    font-weight: 100;
+  }
+  
+  
+}
+
+#contBut:hover {
+    color: black;
+}
+
+
+  .form-group {
+    position: relative;
+    opacity: 1;
+    transition: .6s;
+  }
+  
+  .input-field-icon {
+    color: #bfc9ca;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    transition: .6s;
+  }
+  
+  .form-control {
+    transition: opacity .6s;
+    opacity: 1;
+    border: 0;
+    border-bottom: 2px solid #bdc3c7;
+    border-radius: 0;
+    background: white;
+    font-size: 15px;
+    line-height: 1.467;
+    padding: 4px;
+    height: 42px;
+    -webkit-appearance: none;
+  }
+  
+  input, textarea {
+    transition: all 800ms;
+    font-family: "Roboto";
+    resize: none;  /* removes the resize handle */
+    overflow: auto; /* removes default scrolling bars in IE */
+    outline:none; 
+    font-family:inherit; 
+    box-sizing:border-box;
+    width: 100%;
+    padding: 0px 4px;
+    color: #34495e;
+    margin-top: 1.25em;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #48c9b0;
+    color: #34495e;
+  }
+  
+  input:focus + .input-field-icon {
+    color: #34495e;
+  }
+  
+  textarea.form-control {
+    height: 120px;
+    transition: .6s;
+  }
+  
+  textarea.form-control:focus {
+    height: 200px;
+    border-color: #48c9b0;
+  }
+  
+  @media (max-width: 600px) {
+    .form {
+      width: 90%;
+      margin-top: 12%;
+    }
+  }

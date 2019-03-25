@@ -1,0 +1,108 @@
+//Variables
+$background-url-d: url(../images/header_bckgrd.png);
+$background-d: linear-gradient(
+    rgba(000, 000, 000, 000),rgba(000, 000, 000, 0.6)
+  ), $background-url-d no-repeat center center fixed;
+// $background-url-d: no-repeat center center fixed;
+
+$background-url-m: url(../images/header_bckgrd_m.png);
+$background-m: linear-gradient(
+    rgba(000, 000, 000, 000),rgba(000, 000, 000, 0.6)
+  ), $background-url-m no-repeat center center fixed;
+// $background-url-m: no-repeat center center fixed;
+
+$work-url-d: url(../images/worksec_bckgrd.png);
+$work-d: linear-gradient(
+    rgba(000, 000, 000, 000),rgba(000, 000, 000, 0.2)
+  ), $work-url-d no-repeat center center fixed;
+
+$base_bg: #ebebeb;
+$text_color: #353535;
+$product_color_one: #62cbe9;
+$product_color_two: #e94a4a;
+$color-white: #fff;
+$color-black: #000;
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$red: #F37272;
+$brown: #584E4A;
+$whitey: #f0f0f0;
+$boxBackground : black;
+$boxFont : white;
+$boxHeight : 100px;
+$centeredText : center;
+
+$topbar-responsive-bg: #444444;
+$white: white;
+
+$black : black;
+$lightgrey: lightgrey;
+
+$boxColor : #000000;
+$boxFont : #ffffff;
+$navFont : 24px;
+$fontFam : "Arial";
+$navFontFam : "Arial", Sans-serif;
+$navFontColor : black;
+$mobNav : 15px;
+$padTop : 30px;
+$black : black;
+$margin : 20px;
+$letterSpace : 30px;
+$navHeight : 50px;
+$infoTitle : 27px;
+$lineSpace : 50px;
+$radius : 40%;
+$deskRadius : 0%;
+$footerFont: 40px;
+$butWidth : 100px;
+$butHeight : 30px;
+
+$primary-color : grey;
+
+@mixin iphone-up {
+  @media only screen and (min-width: 32em) {
+    @content;
+  }
+}
+@mixin medium-up {
+  @media only screen and (min-width: 48em) {
+    @content;
+  }
+}
+@mixin large-up {
+  @media only screen and (min-width: 62em) {
+    @content;
+  }
+}
+@mixin xl-up {
+  @media only screen and (min-width: 75em) {
+    @content;
+  }
+}
+
+@mixin sm-only {
+  @media only screen and (max-width: 47.938em) {
+    @content;
+  }
+}
+//FUNCTIONS
+$font-size-base: 16px;
+// em calculator
+
+@function em($pixelNumber){
+  @return #{$pixelNumber/$font-size-base}em;
+}
+
+@function rem($pixelNumber){
+  @return #{$pixelNumber/$font-size-base}rem;
+}
+
+// letter space corrector
+@function space($letterSpace){
+  @return #{$letterSpace/1000px}em;
+}
+
+$futura: 'Arial';
+$proxSemi: 'Arial';
